@@ -1,7 +1,7 @@
 #  Yogesh Modi
 Full Stack Developer | AI Enthusiast | Problem Solver :
 
-I am a Computer Science student specializing in Artificial Intelligence<br>Currently learning Full Stack Development & AI-based systems<br>Interested in building real-world scalable applications<br>Strong focus on Data Structures, Algorithms & System Design<br>Goal: Become a top software engineer & build impactful products
+Computer Science (AI) Undergrad building Scalable real-world Applications with a Strong focus on DSA, System design, and impactful Products.
 
 
 ## 🌐 Socials:
