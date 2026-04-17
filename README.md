@@ -1,5 +1,6 @@
 #  Yogesh Modi
-Full Stack Developer | Frontend Specialist | AI/ML Engineer | Data Analyst — Building scalable, high-performance, data-driven applications with strong DSA & system design expertise
+MERN Stack Developer| ML Engineer | Data Analyst | Problem Solver —
+Building scalable, high-performance, data-driven applications with strong DSA & system design expertise
 
 
 ## 🌐 Socials:
