@@ -1,5 +1,5 @@
 #  Yogesh Modi
-Full Stack Developer | AI Enthusiast | Problem Solver :
+Frontend Developer | ML | Data Analyst | Problem Solver :
 
 Computer Science (AI) Undergrad building Scalable real-world Applications with a Strong focus on DSA, System design, and impactful Products.
 
