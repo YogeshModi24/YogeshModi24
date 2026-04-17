@@ -1,7 +1,5 @@
 #  Yogesh Modi
-Frontend Developer | ML | Data Analyst | Problem Solver :
-
-Computer Science (AI) Undergrad building Scalable real-world Applications with a Strong focus on DSA, System design, and impactful Products.
+Full Stack Developer | Frontend Specialist | AI/ML Engineer | Data Analyst — Building scalable, high-performance, data-driven applications with strong DSA & system design expertise
 
 
 ## 🌐 Socials:
