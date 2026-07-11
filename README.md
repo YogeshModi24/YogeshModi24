@@ -37,7 +37,6 @@ Full-stack systems & product engineering. Exploring **AI/ML**, **agentic systems
 
 - 🏙️ Building CommunityOS — civic issue reporting platform (Turborepo monorepo)
 - 🤖 Exploring LangGraph multi-agent orchestration for hackathon projects
-- 📚 B.Tech AI student @ Rishihood University
 
 ---
 
