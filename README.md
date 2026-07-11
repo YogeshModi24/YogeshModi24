@@ -21,7 +21,7 @@
 
 <br>
 
-<img src="./contrib-heatmap.svg" width="860" alt="GitHub contribution graph" />
+<img src="./contrib-heatmap.svg?v=2" width="860" alt="GitHub contribution graph" />
 
 </div>
 
