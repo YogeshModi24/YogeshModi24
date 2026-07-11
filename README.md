@@ -2,7 +2,7 @@
 
 <table>
 <tr>
-<td valign="top"><img src="./avi-ascii.svg?v=2" width="370" alt="ASCII portrait" /></td>
+<td valign="top"><img src="./yogesh-ascii.svg?v=2" width="370" alt="ASCII portrait" /></td>
 <td valign="top">
   <img src="https://github-readme-stats-sigma-black.vercel.app/api?username=YogeshModi24&show_icons=true&theme=react&hide_border=true&count_private=true" width="490" alt="GitHub Stats" /><br/>
   <img src="https://github-readme-stats-sigma-black.vercel.app/api/top-langs/?username=YogeshModi24&layout=compact&theme=react&hide_border=true" width="490" alt="Top Languages" />
