@@ -4,7 +4,7 @@
 <tr>
 <td valign="top"><img src="./yogesh-ascii.svg?v=2" width="370" alt="ASCII portrait" /></td>
 <td valign="top">
-  <img src="./stats-card.svg?v=1" width="490" alt="GitHub Stats" />
+  <img src="./typing-card.svg?v=1" width="490" alt="About me" />
 </td>
 </tr>
 </table>

@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="490" height="374" viewBox="0 0 490 374" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"><defs><linearGradient id="tbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#111722"/><stop offset="1" stop-color="#0d1117"/></linearGradient></defs><rect width="490" height="374" rx="12" fill="url(#tbg)"/><rect x="0.5" y="0.5" width="489" height="373" rx="12" fill="none" stroke="#30363d"/><line x1="0" y1="30" x2="490" y2="30" stroke="#30363d"/><circle cx="20" cy="15.0" r="5" fill="#ff5f56"/><circle cx="36" cy="15.0" r="5" fill="#ffbd2e"/><circle cx="52" cy="15.0" r="5" fill="#27c93f"/><text x="245.0" y="19.0" fill="#7d8590" font-size="12" text-anchor="middle">yogesh@github: ~$ whoami --verbose</text><text x="20" y="172.0" fill="#3fb950" font-size="14">$ echo $ROLE</text><style>
+.line0 {
+  animation: cycle0 16.00s steps(1) infinite;
+  opacity: 0;
+}
+@keyframes cycle0 {
+  0% { opacity: 0; }
+  0.000% { opacity: 0; }
+  0.062% { opacity: 1; }
+  19.938% { opacity: 1; }
+  20.000% { opacity: 0; }
+  100% { opacity: 0; }
+}
+.clip0 {
+  animation: typeclip0 16.00s steps(1) infinite;
+}
+@keyframes typeclip0 {
+  0%, 0.000% { width: 0; }
+  0.000% { width: 0; }
+  6.250% { width: 168px; }
+  16.875% { width: 168px; }
+  20.000% { width: 0; }
+  100% { width: 0; }
+}
+
+.line1 {
+  animation: cycle1 16.00s steps(1) infinite;
+  opacity: 0;
+}
+@keyframes cycle1 {
+  0% { opacity: 0; }
+  20.000% { opacity: 0; }
+  20.062% { opacity: 1; }
+  39.938% { opacity: 1; }
+  40.000% { opacity: 0; }
+  100% { opacity: 0; }
+}
+.clip1 {
+  animation: typeclip1 16.00s steps(1) infinite;
+}
+@keyframes typeclip1 {
+  0%, 20.000% { width: 0; }
+  20.000% { width: 0; }
+  25.000% { width: 134px; }
+  36.875% { width: 134px; }
+  40.000% { width: 0; }
+  100% { width: 0; }
+}
+
+.line2 {
+  animation: cycle2 16.00s steps(1) infinite;
+  opacity: 0;
+}
+@keyframes cycle2 {
+  0% { opacity: 0; }
+  40.000% { opacity: 0; }
+  40.062% { opacity: 1; }
+  59.938% { opacity: 1; }
+  60.000% { opacity: 0; }
+  100% { opacity: 0; }
+}
+.clip2 {
+  animation: typeclip2 16.00s steps(1) infinite;
+}
+@keyframes typeclip2 {
+  0%, 40.000% { width: 0; }
+  40.000% { width: 0; }
+  45.312% { width: 143px; }
+  56.875% { width: 143px; }
+  60.000% { width: 0; }
+  100% { width: 0; }
+}
+
+.line3 {
+  animation: cycle3 16.00s steps(1) infinite;
+  opacity: 0;
+}
+@keyframes cycle3 {
+  0% { opacity: 0; }
+  60.000% { opacity: 0; }
+  60.063% { opacity: 1; }
+  79.938% { opacity: 1; }
+  80.000% { opacity: 0; }
+  100% { opacity: 0; }
+}
+.clip3 {
+  animation: typeclip3 16.00s steps(1) infinite;
+}
+@keyframes typeclip3 {
+  0%, 60.000% { width: 0; }
+  60.000% { width: 0; }
+  67.500% { width: 202px; }
+  76.875% { width: 202px; }
+  80.000% { width: 0; }
+  100% { width: 0; }
+}
+
+.line4 {
+  animation: cycle4 16.00s steps(1) infinite;
+  opacity: 0;
+}
+@keyframes cycle4 {
+  0% { opacity: 0; }
+  80.000% { opacity: 0; }
+  80.062% { opacity: 1; }
+  99.938% { opacity: 1; }
+  100.000% { opacity: 0; }
+  100% { opacity: 0; }
+}
+.clip4 {
+  animation: typeclip4 16.00s steps(1) infinite;
+}
+@keyframes typeclip4 {
+  0%, 80.000% { width: 0; }
+  80.000% { width: 0; }
+  88.125% { width: 218px; }
+  96.875% { width: 218px; }
+  100.000% { width: 0; }
+  100% { width: 0; }
+}
+</style><g class="line0"><clipPath id="cp0"><rect class="clip0" x="0" y="0" height="30"/></clipPath><g clip-path="url(#cp0)"><text x="20" y="202.0" fill="#58a6ff" font-size="20" font-weight="700">&gt; Full-Stack Developer</text></g></g><g class="line1"><clipPath id="cp1"><rect class="clip1" x="0" y="0" height="30"/></clipPath><g clip-path="url(#cp1)"><text x="20" y="202.0" fill="#58a6ff" font-size="20" font-weight="700">&gt; AI / ML Engineer</text></g></g><g class="line2"><clipPath id="cp2"><rect class="clip2" x="0" y="0" height="30"/></clipPath><g clip-path="url(#cp2)"><text x="20" y="202.0" fill="#58a6ff" font-size="20" font-weight="700">&gt; B.Tech AI Student</text></g></g><g class="line3"><clipPath id="cp3"><rect class="clip3" x="0" y="0" height="30"/></clipPath><g clip-path="url(#cp3)"><text x="20" y="202.0" fill="#58a6ff" font-size="20" font-weight="700">&gt; Building agentic systems</text></g></g><g class="line4"><clipPath id="cp4"><rect class="clip4" x="0" y="0" height="30"/></clipPath><g clip-path="url(#cp4)"><text x="20" y="202.0" fill="#58a6ff" font-size="20" font-weight="700">&gt; LangGraph + RAG enthusiast</text></g></g><rect x="20" y="210.0" width="4" height="22" fill="#c9d1d9"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.51;1" dur="0.9s" repeatCount="indefinite"/></rect><text x="20" y="262.0" fill="#7d8590" font-size="12">exploring AI/ML, agentic systems &amp; full-stack product engineering</text></svg>
