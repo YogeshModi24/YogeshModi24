@@ -26,7 +26,7 @@
 
 ---
 
-### 🎯 Interests
+### Interests
 
 Full-stack systems & product engineering. Exploring **AI/ML**, **agentic systems**, and **LangGraph workflows** on the side.
 
