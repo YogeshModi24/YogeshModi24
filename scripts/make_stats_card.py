@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
 Self-hosted GitHub stats card -- fetches real stats via GitHub's public REST API
-and renders a clean SVG card matching the terminal aesthetic.
+and renders a polished SVG card: icon + big bold number stat tiles, plus a
+top-languages bar list. Matches the terminal aesthetic of the other cards.
 """
 import os
 import sys
@@ -17,15 +18,12 @@ BG2 = "#111722"
 FRAME = "#30363d"
 MUTED = "#7d8590"
 INK = "#c9d1d9"
-KEY = "#ffa657"
 SECTION = "#58a6ff"
-GREEN = "#3fb950"
-ACCENT = "#22d3ee"
+TILE_BG = "#161b22"
 
 W = 490
 PAD = 20
 TITLEBAR_H = 30
-LINE_H = 22
 
 
 def fetch_json(url):
@@ -77,11 +75,41 @@ LANG_COLORS = {
     "Dart": "#00B4AB", "Vue": "#41b883", "EJS": "#a91e50",
 }
 
+# simple icon glyphs drawn as tiny inline SVG paths (no external deps / emoji font issues)
+def icon(kind, x, y, color):
+    s = 15  # icon box size
+    if kind == "repo":
+        return (f'<g transform="translate({x},{y})" stroke="{color}" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round">'
+                 f'<path d="M2 1.5h8.5a1.5 1.5 0 0 1 1.5 1.5v10a1 1 0 0 1-1 1H3a1.5 1.5 0 0 1-1.5-1.5V3A1.5 1.5 0 0 1 2 1.5Z"/>'
+                 f'<path d="M2 11.5H12"/></g>')
+    if kind == "followers":
+        return (f'<g transform="translate({x},{y})" stroke="{color}" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round">'
+                 f'<circle cx="5" cy="4" r="2.3"/><path d="M1 13c0-2.5 1.8-4 4-4s4 1.5 4 4"/>'
+                 f'<circle cx="11.5" cy="5" r="1.8"/><path d="M9.5 13c0-2 1-3.5 3-3.5"/></g>')
+    if kind == "star":
+        return (f'<g transform="translate({x},{y})" fill="{color}">'
+                 f'<path d="M7 0.5l1.9 4 4.4.6-3.2 3 0.8 4.4L7 10.4 3.1 12.5l0.8-4.4-3.2-3 4.4-.6Z"/></g>')
+    if kind == "fork":
+        return (f'<g transform="translate({x},{y})" stroke="{color}" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round">'
+                 f'<circle cx="3.5" cy="2.5" r="1.5"/><circle cx="10.5" cy="2.5" r="1.5"/><circle cx="7" cy="11.5" r="1.5"/>'
+                 f'<path d="M3.5 4v2a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2V4"/><path d="M7 8v2"/></g>')
+    return ""
+
 
 def render(stats):
+    stat_tiles = [
+        ("repo", "Repos", stats["public_repos"], "#58a6ff"),
+        ("followers", "Followers", stats["followers"], "#3fb950"),
+        ("star", "Stars", stats["total_stars"], "#f2cc60"),
+        ("fork", "Forks", stats["total_forks"], "#bc8cff"),
+    ]
+
+    tile_w = (W - PAD * 2 - 12) / 2
+    tile_h = 70
     lang_max = stats["top_langs"][0][1] if stats["top_langs"] else 1
-    lang_rows_h = len(stats["top_langs"]) * 26 + 10
-    H = TITLEBAR_H + 30 + 5 * LINE_H + 30 + lang_rows_h + PAD
+    lang_row_h = 28
+    lang_block_h = len(stats["top_langs"]) * lang_row_h + 36
+    H = TITLEBAR_H + 24 + tile_h * 2 + 12 + lang_block_h + PAD
 
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" '
@@ -97,35 +125,32 @@ def render(stats):
     parts.append(f'<text x="{W/2}" y="{TITLEBAR_H/2 + 4}" fill="{MUTED}" font-size="12" '
                  f'text-anchor="middle">yogesh@github: ~$ gh stats</text>')
 
-    y = TITLEBAR_H + 30
-    parts.append(f'<text x="{PAD}" y="{y}" fill="{SECTION}" font-size="13" font-weight="700">— GitHub Stats</text>')
-    parts.append(f'<line x1="{PAD+140}" y1="{y-4}" x2="{W-PAD}" y2="{y-4}" stroke="{FRAME}" stroke-opacity="0.8"/>')
-    y += LINE_H + 4
+    # 2x2 stat tiles
+    ty = TITLEBAR_H + 22
+    for idx, (kind, label, value, color) in enumerate(stat_tiles):
+        col = idx % 2
+        row = idx // 2
+        tx = PAD + col * (tile_w + 12)
+        y = ty + row * (tile_h + 12)
+        parts.append(f'<rect x="{tx}" y="{y}" width="{tile_w}" height="{tile_h}" rx="10" fill="{TILE_BG}" stroke="{FRAME}"/>')
+        parts.append(icon(kind, tx + 16, y + 16, color))
+        parts.append(f'<text x="{tx+16}" y="{y+48}" fill="{color}" font-size="26" font-weight="700">{value}</text>')
+        parts.append(f'<text x="{tx+16}" y="{y+62}" fill="{MUTED}" font-size="11.5">{label}</text>')
 
-    rows = [
-        ("Repos", str(stats["public_repos"])),
-        ("Followers", str(stats["followers"])),
-        ("Total Stars", str(stats["total_stars"])),
-        ("Total Forks", str(stats["total_forks"])),
-    ]
-    for key, val in rows:
-        parts.append(f'<text x="{PAD}" y="{y}" fill="{KEY}" font-size="12.5" font-weight="700">{key}</text>')
-        parts.append(f'<text x="{PAD+130}" y="{y}" fill="{INK}" font-size="12.5">{val}</text>')
-        y += LINE_H
-
-    y += 10
+    y = ty + 2 * tile_h + 12 + 26
     parts.append(f'<text x="{PAD}" y="{y}" fill="{SECTION}" font-size="13" font-weight="700">— Top Languages</text>')
     parts.append(f'<line x1="{PAD+170}" y1="{y-4}" x2="{W-PAD}" y2="{y-4}" stroke="{FRAME}" stroke-opacity="0.8"/>')
-    y += 20
+    y += 22
 
     bar_max_w = W - PAD * 2 - 110
     for lang, count in stats["top_langs"]:
         color = LANG_COLORS.get(lang, "#8b949e")
-        bar_w = max(6, int(bar_max_w * count / lang_max))
-        parts.append(f'<circle cx="{PAD+4}" cy="{y-4}" r="4" fill="{color}"/>')
-        parts.append(f'<text x="{PAD+14}" y="{y}" fill="{INK}" font-size="11.5">{lang}</text>')
-        parts.append(f'<rect x="{PAD+95}" y="{y-11}" width="{bar_w}" height="8" rx="4" fill="{color}" opacity="0.85"/>')
-        y += 26
+        bar_w = max(8, int(bar_max_w * count / lang_max))
+        parts.append(f'<circle cx="{PAD+5}" cy="{y-4}" r="4.5" fill="{color}"/>')
+        parts.append(f'<text x="{PAD+16}" y="{y}" fill="{INK}" font-size="12">{lang}</text>')
+        parts.append(f'<rect x="{PAD+96}" y="{y-12}" width="{bar_max_w}" height="9" rx="4.5" fill="{FRAME}" opacity="0.4"/>')
+        parts.append(f'<rect x="{PAD+96}" y="{y-12}" width="{bar_w}" height="9" rx="4.5" fill="{color}"/>')
+        y += lang_row_h
 
     parts.append("</svg>")
     return "".join(parts)
