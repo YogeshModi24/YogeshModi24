@@ -1,13 +1,13 @@
 <div align="center">
 
-<table>
+<!-- <table>
 <tr>
 <td valign="top"><img src="./yogesh-ascii.svg?v=2" width="370" alt="ASCII portrait" /></td>
 <td valign="top">
   <img src="./typing-card.svg?v=1" width="490" alt="About me" />
 </td>
 </tr>
-</table>
+</table> -->
 
 ## Yogesh Modi
 
