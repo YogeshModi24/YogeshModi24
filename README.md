@@ -43,6 +43,7 @@ Full-stack systems & product engineering. Exploring **AI/ML**, **agentic systems
 
 - **[CommunityOS](https://github.com/YogeshModi24/CommunityOS)** — full-stack civic issue reporting platform with citizen/municipality role separation and ward-based access control (Next.js, Express, MongoDB, Socket.io)
 - **[ChemDirect](https://github.com/YogeshModi24/ChemDirect)** — LLM-driven transactional search platform for chemical & organic products. Smart filtering algorithm surfacing direct purchase links, cutting researcher sourcing time by **70%** (Next.js, Node.js, LLM APIs, crawler-based architecture)
+- **[GrowEasy-CSV](https://github.com/YogeshModi24/GrowEasy-CSV-Project)** — AI-powered CSV importer that auto-maps, cleans, and validates raw spreadsheet data into standardized CRM records via LLM extraction, with real-time streaming progress and virtualized rendering for 1,000+ row files (Next.js, Express, Groq/Llama 3.3, Zod)
 
 **Repos worth a look**
 - [`CommunityOS`](https://github.com/YogeshModi24/CommunityOS)
