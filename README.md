@@ -11,7 +11,7 @@
 
 ## Yogesh Modi
 
-**Full-Stack Developer · AI/ML Engineer · B.Tech AI Student**
+**Full-Stack Developer · Data · AI · Product**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-yogeshmodi24-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yogeshmodi24/)
 [![X](https://img.shields.io/badge/X-YModi117-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/YModi117)
