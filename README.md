@@ -43,14 +43,11 @@ Full-stack systems & product engineering. Exploring **AI/ML**, **agentic systems
 
 - **[CommunityOS](https://github.com/YogeshModi24/CommunityOS)** — full-stack civic issue reporting platform with citizen/municipality role separation and ward-based access control (Next.js, Express, MongoDB, Socket.io)
 - **[ChemDirect](https://github.com/YogeshModi24/ChemDirect)** — LLM-driven transactional search platform for chemical & organic products. Smart filtering algorithm surfacing direct purchase links, cutting researcher sourcing time by **70%** (Next.js, Node.js, LLM APIs, crawler-based architecture)
-- **[Last-Minute Life Saver](https://github.com/YogeshModi24/last-minute-life-saver)** — AI-powered deadline management system with LangGraph multi-agent orchestration
-- **[Autonomous Research Assistant](https://github.com/YogeshModi24/autonomous-research-assistant)** — hierarchical multi-agent system with ChromaDB RAG memory & FastAPI SSE streaming
 
 **Repos worth a look**
-- [`watch-the-watchers`](https://github.com/YogeshModi24/watch-the-watchers)
-- [`vitalog`](https://github.com/YogeshModi24/vitalog)
-- [`breathe-esg-ingestor`](https://github.com/YogeshModi24/breathe-esg-ingestor)
-- [`smart-queue`](https://github.com/YogeshModi24/smart-queue)
+- [`CommunityOS`](https://github.com/YogeshModi24/CommunityOS)
+- [`GrowEasy-CSV`](https://github.com/YogeshModi24/GrowEasy-CSV-Project)
+- [`ChemDirect`](https://github.com/YogeshModi24/ChemDirect)
 
 ---
 
