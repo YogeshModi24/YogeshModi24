@@ -39,6 +39,12 @@ Full-stack systems & product engineering. Exploring **AI/ML**, **agentic systems
 
 ---
 
+### 🌱 Open Source Contributions
+
+- **[Vibe-Trading](https://github.com/HKUDS/Vibe-Trading)** — Added the Frazzini-Pedersen (2014) Betting-Against-Beta factor to the academic factor library of an open-source AI trading agent. Merged via [PR #480](https://github.com/HKUDS/Vibe-Trading/pull/480).
+
+---
+
 ### 🧱 Things I've Built
 
 - **[CommunityOS](https://github.com/YogeshModi24/CommunityOS)** — full-stack civic issue reporting platform with citizen/municipality role separation and ward-based access control (Next.js, Express, MongoDB, Socket.io)
