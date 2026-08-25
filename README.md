@@ -125,9 +125,20 @@ Full-stack systems & product engineering. Exploring **AI/ML**, **agentic systems
 
 ---
 
-### 📊 Showcase 
-<p align="center">
-  <img width="90%" src="https://github-readme-activity-graph.vercel.app/graph?username=YogeshModi24&theme=react-dark&hide_border=true" /> 
-</p> <p align="center"> <img src="https://github-readme-streak-stats.herokuapp.com/?user=YogeshModi24&theme=react&hide_border=true" /> </p> </div>
+### 📊 Showcase
 
+<p align="center">
+  <img
+    width="90%"
+    src="https://github-readme-activity-graph.vercel.app/graph?username=YogeshModi24&theme=react-dark&hide_border=true&area=true"
+    alt="Yogesh Modi GitHub Activity Graph"
+  />
+</p>
+
+<p align="center">
+  <img
+    src="https://streak-stats.demolab.com/?user=YogeshModi24&theme=react&hide_border=true"
+    alt="Yogesh Modi GitHub Streak"
+  />
+</p>
 </div>
