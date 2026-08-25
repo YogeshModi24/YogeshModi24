@@ -130,7 +130,7 @@ Full-stack systems & product engineering. Exploring **AI/ML**, **agentic systems
 <p align="center">
   <img
     width="90%"
-    src="https://github-readme-activity-graph.vercel.app/graph?username=YogeshModi24&theme=react-dark&hide_border=true&area=true"
+    src="https://github-readme-activity-graph.vercel.app/graph?username=YogeshModi24&theme=react-dark&hide_border=true"
     alt="Yogesh Modi GitHub Activity Graph"
   />
 </p>
